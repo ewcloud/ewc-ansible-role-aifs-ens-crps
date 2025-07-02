@@ -1,0 +1,19 @@
+description: |
+  AIFS-ens CRPS 1.0 
+
+  AIFS ensemble trained with the CRPS loss function.
+
+post_processors: 
+  - accumulate_from_start_of_forecast
+output:
+  grib:
+    encoding: 
+      class: ai
+      type: pf
+      stream: enfo
+      eps: 1
+      generatingProcessIdentifier: 1
+checkpoint: /usr/local/apps/aifs-ens-crps/checkpoints/aifs-ens-crps-1.0.ckpt
+patch_metadata:
+  dataset:
+    constant_fields: [z, sdor, slor, lsm]
