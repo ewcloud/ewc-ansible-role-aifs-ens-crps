@@ -1,5 +1,6 @@
 ---
-- hosts: all
-  become: yes
+- name: Test playbook
+  hosts: all
+  become: true
   roles:
-    - ewc-ansible-aifs-ens-crps
+    - ewc-ansible-role-aifs-ens-crps

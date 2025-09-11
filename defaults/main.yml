@@ -1,6 +1,6 @@
 ---
-aifs_ens_crps_env_wipe: no
+aifs_ens_crps_env_wipe: false
 aifs_ens_crps_env_name: aifs-ens-crps
 aifs_ens_crps_env_path: "{{ conda_prefix }}/envs/{{ aifs_ens_crps_env_name }}"
 aifs_ens_crps_checkpoint: https://huggingface.co/ecmwf/aifs-ens-1.0/resolve/main/aifs-ens-crps-1.0.ckpt
-aifs_ens_crps_create_ipykernel: yes
+aifs_ens_crps_create_ipykernel: true
